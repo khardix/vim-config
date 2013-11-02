@@ -13,6 +13,7 @@ Bundle 'vim-scripts/dante.vim'
 
 " IDE
 Bundle 'scrooloose/nerdtree'
+Bundle 'ervandew/supertab'
 
 " Syntax highlight
 Bundle 'vim-scripts/Better-CSS-Syntax-for-Vim'
