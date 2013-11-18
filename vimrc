@@ -52,6 +52,7 @@ set autowrite
 set backup
 set backupdir=~/.vim/backup/,.,~/
 set directory=~/.vim/temp/,/var/tmp/,. " Temporary files
+set viewdir=~/.vim/views/
 set confirm
 
 " === Clipboard ===
