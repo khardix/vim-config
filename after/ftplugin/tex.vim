@@ -3,3 +3,5 @@ if has('gui_running')
   set background=light
   colorscheme solarized
 endif
+
+set tw=80
