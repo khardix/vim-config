@@ -57,6 +57,7 @@ set confirm
 
 " === Clipboard ===
 set clipboard=unnamed
+set pastetoggle=<F11> " Toggle nice text pasting from outside vim
 
 " === Macros ===
 source ~/.vim/macros.vim
