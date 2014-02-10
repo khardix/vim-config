@@ -16,7 +16,8 @@ Bundle 'scrooloose/nerdtree'
 Bundle 'ervandew/supertab'
 
 " Syntax highlight
-Bundle 'vim-scripts/Better-CSS-Syntax-for-Vim'
+"Bundle 'vim-scripts/Better-CSS-Syntax-for-Vim'
+Bundle 'hail2u/vim-css3-syntax'
 
 " Misc
 Bundle 'Raimondi/delimitMate'
