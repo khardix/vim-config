@@ -10,12 +10,14 @@ source ~/.vim/bundles.vim
 filetype plugin indent on
 
 " === Look ===
-colorscheme dante
 set ruler " Show cursor position
 set showmode " Show current mode
 set showcmd
 syntax on " Highlight syntax
 set number " Turn on line numbering
+set background=dark
+let g:solarized_termcolors=256
+colorscheme solarized
 
 " === Line wrapping ===
 set nowrap
