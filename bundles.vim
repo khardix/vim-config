@@ -24,7 +24,6 @@ Bundle 'peterhoeg/vim-qml'
 " Misc
 Bundle 'Raimondi/delimitMate'
 Bundle 'docunext/closetag.vim'
-Bundle 'ervandew/supertab'
 Bundle 'tpope/vim-surround'
 Bundle 'fholgado/minibufexpl.vim'
 Bundle 'vim-scripts/bufkill.vim'
