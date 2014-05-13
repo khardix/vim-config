@@ -14,10 +14,12 @@ Bundle 'vim-scripts/dante.vim'
 " IDE
 Bundle 'scrooloose/nerdtree'
 Bundle 'ervandew/supertab'
+Bundle 'spf13/PIV'
 
 " Syntax highlight
 "Bundle 'vim-scripts/Better-CSS-Syntax-for-Vim'
 Bundle 'hail2u/vim-css3-syntax'
+Bundle 'peterhoeg/vim-qml'
 
 " Misc
 Bundle 'Raimondi/delimitMate'
