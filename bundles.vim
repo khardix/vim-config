@@ -21,6 +21,9 @@ Bundle 'spf13/PIV'
 Bundle 'hail2u/vim-css3-syntax'
 Bundle 'peterhoeg/vim-qml'
 
+" Omnicomplete
+Bundle 'vim-scripts/pythoncomplete'
+
 " Misc
 Bundle 'Raimondi/delimitMate'
 Bundle 'docunext/closetag.vim'
