@@ -1,3 +1,7 @@
+" VIM options
+set autoindent
+set smartindent
+
 " phpDocumentor options
 let g:pdv_cfg_display_Package = 0
 let g:pdv_cfg_display_Version = 0

@@ -20,6 +20,8 @@ Bundle 'spf13/PIV'
 "Bundle 'vim-scripts/Better-CSS-Syntax-for-Vim'
 Bundle 'hail2u/vim-css3-syntax'
 Bundle 'peterhoeg/vim-qml'
+Bundle 'othree/html5.vim'
+Bundle 'kchmck/vim-coffee-script'
 
 " Omnicomplete
 Bundle 'vim-scripts/pythoncomplete'
