@@ -1,10 +1,10 @@
 " Vundle settings
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
 " let Vundle manage Vundle - required
-Bundle 'gmarik/vundle'
+Bundle 'gmarik/Vundle.vim'
 
 " ===== My bundles =====
 " Colorschemes
@@ -15,6 +15,7 @@ Bundle 'vim-scripts/dante.vim'
 Bundle 'scrooloose/nerdtree'
 Bundle 'ervandew/supertab'
 Bundle 'spf13/PIV'
+Bundle 'majutsushi/tagbar'
 
 " Syntax highlight
 "Bundle 'vim-scripts/Better-CSS-Syntax-for-Vim'
@@ -22,9 +23,12 @@ Bundle 'hail2u/vim-css3-syntax'
 Bundle 'peterhoeg/vim-qml'
 Bundle 'othree/html5.vim'
 Bundle 'kchmck/vim-coffee-script'
+Bundle 'tpope/vim-markdown'
+Bundle 'mintplant/vim-literate-coffeescript'
 
 " Omnicomplete
 Bundle 'vim-scripts/pythoncomplete'
+Bundle 'Rip-Rip/clang_complete'
 
 " Misc
 Bundle 'Raimondi/delimitMate'
@@ -32,3 +36,6 @@ Bundle 'docunext/closetag.vim'
 Bundle 'tpope/vim-surround'
 Bundle 'fholgado/minibufexpl.vim'
 Bundle 'vim-scripts/bufkill.vim'
+
+" Ending
+call vundle#end()

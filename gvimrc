@@ -5,7 +5,7 @@ colorscheme solarized
 
 set display=lastline "Display ed of line instead of @@@
 set guioptions=acigt "GUI settings - see :help guioptions
-set guifont=Inconsolata\ 10
+set guifont=Inconsolata\ 11
 set scrolloff=3 "Minimum number of lines before and after cursor
 set sidescroll=5 "Side scrolling width in characters
 
