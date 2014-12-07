@@ -25,6 +25,7 @@ Bundle 'othree/html5.vim'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'tpope/vim-markdown'
 Bundle 'mintplant/vim-literate-coffeescript'
+Bundle 'derekwyatt/vim-scala'
 
 " Omnicomplete
 Bundle 'vim-scripts/pythoncomplete'
