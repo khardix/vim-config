@@ -26,9 +26,12 @@ set showbreak=+
 set colorcolumn=81
 
 " === Word completions ===
-set wildchar=<Tab> " Complete on tab
-set wildmenu " Show menu
-set wildmode=longest:full,full " Fill in the longest common part
+"set wildchar=<Tab> " Complete on tab
+"set wildmenu " Show menu
+"set wildmode=longest:full,full " Fill in the longest common part
+" ^ deprecated in favor of supertab/omnicomplete
+set completeopt=menu,menuone,longest " disable preview window
+set pumheight=15 "Limit popup menu height
 
 " === Movement ===
 noremap <Up> g<Up>
