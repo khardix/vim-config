@@ -27,6 +27,7 @@ Bundle 'tpope/vim-markdown'
 Bundle 'mintplant/vim-literate-coffeescript'
 Bundle 'derekwyatt/vim-scala'
 Bundle 'tmux-plugins/vim-tmux'
+Bundle 'tikhomirov/vim-glsl'
 
 " Omnicomplete
 Bundle 'vim-scripts/pythoncomplete'
