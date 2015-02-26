@@ -30,7 +30,7 @@ Bundle 'tmux-plugins/vim-tmux'
 Bundle 'tikhomirov/vim-glsl'
 
 " Omnicomplete
-Bundle 'vim-scripts/pythoncomplete'
+Bundle 'Shougo/neocomplete.vim'
 Bundle 'Rip-Rip/clang_complete'
 
 " Misc
