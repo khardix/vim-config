@@ -38,8 +38,8 @@ Bundle 'scrooloose/syntastic'
 Bundle 'Raimondi/delimitMate'
 Bundle 'docunext/closetag.vim'
 Bundle 'tpope/vim-surround'
-Bundle 'fholgado/minibufexpl.vim'
 Bundle 'vim-scripts/bufkill.vim'
+Bundle 'ap/vim-buftabline'
 
 " Ending
 call vundle#end()
