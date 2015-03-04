@@ -71,4 +71,6 @@ source ~/.vim/macros.vim
 source ~/.vim/ftypes.vim
 
 " === Plugin config ===
-source ~/.vim/plugins.vim
+"source ~/.vim/plugins.vim
+" Not necessary, configs are in plugin/ subdir and sould be loaded
+" automatically

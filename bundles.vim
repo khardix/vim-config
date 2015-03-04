@@ -29,9 +29,10 @@ Bundle 'derekwyatt/vim-scala'
 Bundle 'tmux-plugins/vim-tmux'
 Bundle 'tikhomirov/vim-glsl'
 
-" Omnicomplete
+" Completion and syntax checking
 Bundle 'Shougo/neocomplete.vim'
 Bundle 'Rip-Rip/clang_complete'
+Bundle 'scrooloose/syntastic'
 
 " Misc
 Bundle 'Raimondi/delimitMate'
