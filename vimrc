@@ -59,6 +59,7 @@ set backupdir=~/.vim/backup/,.,~/
 set directory=~/.vim/temp/,/var/tmp/,. " Temporary files
 set viewdir=~/.vim/views/
 set confirm
+set hidden
 
 " === Clipboard ===
 set clipboard=unnamed
@@ -70,7 +71,5 @@ source ~/.vim/macros.vim
 " === Filetype config ===
 source ~/.vim/ftypes.vim
 
-" === Plugin config ===
-"source ~/.vim/plugins.vim
-" Not necessary, configs are in plugin/ subdir and sould be loaded
-" automatically
+" === Custom keybindings ===
+source ~/.vim/keybinds.vim
