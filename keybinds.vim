@@ -9,11 +9,14 @@ nmap gT :bprev<CR>
 " ===== IDE functions ====
 nnoremap <LocalLeader>n :NERDTreeToggle<CR>
 nnoremap <LocalLeader>t :TagbarToggle<CR>
+
 nnoremap <LocalLeader>sc :syntasticCheck<CR>
+nnoremap ]l :lnext<CR>
+nnoremap [l :lprevious<CR>
 
 nnoremap <F9> :make<CR>
-nnoremap <LocalLeader>c :cnext<CR>
-nnoremap <LocalLeader>C :cprev<CR>
+nnoremap ]c :cnext<CR>
+nnoremap [c :cprev<CR>
 nnoremap <LocalLeader>l :clist<CR>
 
 " Window movement
