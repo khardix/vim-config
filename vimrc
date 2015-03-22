@@ -65,6 +65,16 @@ set hidden
 set clipboard=unnamed
 set pastetoggle=<F11> " Toggle nice text pasting from outside vim
 
+" === Folding ===
+set foldmethod=marker
+set foldmarker=BEGIN,END
+set foldtext=CustFoldText()
+function CustFoldText()
+  let line = getline(v:foldstart)
+  let sub = substitute(line, '/\*\|\*/\|//\|BEGIN\d\=', '', 'g') " END
+  return v:folddashes . sub
+endfunction
+
 " === Macros ===
 source ~/.vim/macros.vim
 
