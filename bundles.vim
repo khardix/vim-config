@@ -30,9 +30,7 @@ Bundle 'tmux-plugins/vim-tmux'
 Bundle 'tikhomirov/vim-glsl'
 
 " Completion and syntax checking
-Bundle 'Shougo/neocomplete.vim'
-Bundle 'Rip-Rip/clang_complete'
-Bundle 'scrooloose/syntastic'
+Bundle 'Valloric/YouCompleteMe'
 
 " Misc
 Bundle 'Raimondi/delimitMate'
