@@ -36,7 +36,8 @@ Bundle 'Valloric/YouCompleteMe'
 Bundle 'Raimondi/delimitMate'
 Bundle 'docunext/closetag.vim'
 Bundle 'tpope/vim-surround'
-Bundle 'vim-scripts/bufkill.vim'
+Bundle 'tpope/vim-repeat'
+Bundle 'qpkorr/vim-bufkill'
 Bundle 'ap/vim-buftabline'
 
 " Ending

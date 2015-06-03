@@ -5,6 +5,7 @@
 " Use buffers rather than tabs
 nmap gt :bnext<CR>
 nmap gT :bprev<CR>
+nnoremap <C-q> :BD<CR>
 
 " ===== IDE functions ====
 nnoremap <LocalLeader>n :NERDTreeToggle<CR>
