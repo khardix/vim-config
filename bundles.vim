@@ -16,6 +16,7 @@ Bundle 'scrooloose/nerdtree'
 Bundle 'ervandew/supertab'
 Bundle 'spf13/PIV'
 Bundle 'majutsushi/tagbar'
+Bundle 'ctrlpvim/ctrlp.vim'
 
 " Syntax highlight
 "Bundle 'vim-scripts/Better-CSS-Syntax-for-Vim'
