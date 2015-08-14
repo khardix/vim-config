@@ -29,7 +29,6 @@ Bundle 'vitaly/vim-literate-coffeescript'
 Bundle 'derekwyatt/vim-scala'
 Bundle 'tmux-plugins/vim-tmux'
 Bundle 'tikhomirov/vim-glsl'
-Bundle 'gisraptor/vim-lilypond-integrator'
 
 " Completion and syntax checking
 Bundle 'Valloric/YouCompleteMe'
