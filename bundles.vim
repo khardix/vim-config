@@ -33,6 +33,9 @@ Bundle 'tikhomirov/vim-glsl'
 " Completion and syntax checking
 Bundle 'Valloric/YouCompleteMe'
 
+" Prose/text editing
+Bundle 'mmai/wikilink'
+
 " Misc
 Bundle 'Raimondi/delimitMate'
 Bundle 'docunext/closetag.vim'
