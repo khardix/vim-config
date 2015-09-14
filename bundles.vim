@@ -35,6 +35,7 @@ Bundle 'Valloric/YouCompleteMe'
 
 " Prose/text editing
 Bundle 'mmai/wikilink'
+Bundle 'dhruvasagar/vim-table-mode'
 
 " Misc
 Bundle 'Raimondi/delimitMate'

@@ -10,3 +10,6 @@ autocmd FileType html,xhtml,xml,phtml,latte set smartindent
 
 " Python omnicomplete
 au FileType python,python3 set omnifunc=pythoncomplete#Complete
+
+" Tables in markdown
+au FileType markdown let g:table_mode_corner="|"
