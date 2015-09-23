@@ -44,6 +44,7 @@ Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-repeat'
 Bundle 'qpkorr/vim-bufkill'
 Bundle 'ap/vim-buftabline'
+Bundle 'tpope/vim-eunuch'
 
 " Ending
 call vundle#end()
