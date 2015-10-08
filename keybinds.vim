@@ -28,3 +28,4 @@ nnoremap <C-l> <C-w>l
 
 " Remap keys fo better functionality under tmux
 nnoremap <C-e> <C-a>
+vnoremap <C-e> <C-a>
