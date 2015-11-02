@@ -29,6 +29,7 @@ Plugin 'tikhomirov/vim-glsl'
 
 " Completion and syntax checking
 Plugin 'Valloric/YouCompleteMe'
+Plugin 'artur-shaik/vim-javacomplete2'
 
 " Prose/text editing
 Plugin 'mmai/wikilink'
