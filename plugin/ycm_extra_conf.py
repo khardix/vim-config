@@ -15,5 +15,5 @@ def FlagsForFile(filename, **kwargs):
     flags.extend(['-std=c99', '-x', 'c'])
   else:
     flags.extend(['-std=c++11', '-x', 'c++'])
-  
+
   return { 'flags': flags, 'do_cache': True }

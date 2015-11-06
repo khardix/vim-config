@@ -10,6 +10,7 @@ Plugin 'gmarik/Vundle.vim'
 " Colorschemes
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'vim-scripts/dante.vim'
+Plugin 'nanotech/jellybeans.vim'
 
 " IDE
 Plugin 'scrooloose/nerdtree'
