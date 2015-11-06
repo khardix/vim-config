@@ -17,6 +17,7 @@ Plugin 'spf13/PIV'
 Plugin 'majutsushi/tagbar'
 
 " Syntax highlight
+Plugin 'hdima/python-syntax'
 Plugin 'hail2u/vim-css3-syntax'
 Plugin 'peterhoeg/vim-qml'
 Plugin 'othree/html5.vim'
