@@ -64,6 +64,23 @@ set viewdir=~/.vim/views/
 set confirm
 set hidden
 
+" === Formatting ===
+set formatoptions= " Reset – among others, ignore textwidth for ordinary text
+" Autowrap comments using textwidth, insert comment leaders after <Enter>,
+" reformat comments using gq, remove comment leader when joining
+set formatoptions+=c,r,q,j
+" Keep wrapping for numbered lists, do not break long lines in Insert mode,
+" do not break line after one-letter word
+set formatoptions+=n,l,1
+" When joining, do not insert space after multi-byte character
+set formatoptions+=M
+
+set textwidth=80
+
+" Show special unprintable chracters
+set list
+set listchars=tab:↹·,extends:⇉,precedes:⇇,nbsp:␣
+
 " === Clipboard ===
 set clipboard^=unnamed
 set pastetoggle=<F11> " Toggle nice text pasting from outside vim

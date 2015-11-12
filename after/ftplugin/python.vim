@@ -7,5 +7,5 @@ setlocal softtabstop=4
 setlocal expandtab
 
 " File width
-setlocal textwidth=79
+setlocal textwidth=72 " Used only in long comments
 setlocal colorcolumn=80
