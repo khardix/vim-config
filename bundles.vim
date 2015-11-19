@@ -36,6 +36,7 @@ Plugin 'artur-shaik/vim-javacomplete2'
 " Prose/text editing
 Plugin 'mmai/wikilink'
 Plugin 'dhruvasagar/vim-table-mode'
+Plugin 'lervag/vimtex'
 
 " Misc
 Plugin 'Raimondi/delimitMate'
