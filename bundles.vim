@@ -16,6 +16,7 @@ Plugin 'nanotech/jellybeans.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'spf13/PIV'
 Plugin 'majutsushi/tagbar'
+Plugin 'tpope/vim-dispatch'
 
 " Syntax highlight
 Plugin 'hdima/python-syntax'
