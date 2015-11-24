@@ -28,6 +28,7 @@ Plugin 'vitaly/vim-literate-coffeescript'
 Plugin 'derekwyatt/vim-scala'
 Plugin 'tmux-plugins/vim-tmux'
 Plugin 'tikhomirov/vim-glsl'
+Plugin 'justinmk/vim-syntax-extra'
 
 " Completion and syntax checking
 Plugin 'Valloric/YouCompleteMe'
