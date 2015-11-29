@@ -33,6 +33,7 @@ Plugin 'justinmk/vim-syntax-extra'
 
 " Completion and syntax checking
 Plugin 'Valloric/YouCompleteMe'
+Plugin 'rdnetto/YCM-Generator'
 Plugin 'artur-shaik/vim-javacomplete2'
 
 " Prose/text editing
