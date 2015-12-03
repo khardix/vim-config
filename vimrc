@@ -17,7 +17,8 @@ syntax on " Highlight syntax
 set number " Turn on line numbering
 set background=dark
 let g:solarized_termcolors=256
-colorscheme solarized
+"colorscheme solarized
+colorscheme jellybeans
 
 " === Line wrapping ===
 set nowrap
