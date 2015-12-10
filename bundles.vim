@@ -30,6 +30,7 @@ Plugin 'derekwyatt/vim-scala'
 Plugin 'tmux-plugins/vim-tmux'
 Plugin 'tikhomirov/vim-glsl'
 Plugin 'justinmk/vim-syntax-extra'
+Plugin 'wting/rust.vim'
 
 " Completion and syntax checking
 Plugin 'Valloric/YouCompleteMe'
