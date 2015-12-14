@@ -9,7 +9,7 @@ nnoremap <C-q> :BD<CR>
 
 " ===== IDE functions ====
 nnoremap <LocalLeader>n :NERDTreeToggle<CR>
-nnoremap <LocalLeader>tt :TagbarToggle<CR>
+nnoremap <LocalLeader>tb :TagbarToggle<CR>
 
 "nnoremap <LocalLeader>sc :syntasticCheck<CR>
 "nnoremap ]l :lnext<CR>
