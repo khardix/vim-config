@@ -13,6 +13,9 @@ au FileType python,python3 setlocal keywordprg=pydoc3
 
 " C/C++ help
 au FileType c,cpp,h,hpp setlocal keywordprg=cppman
+" C/C++ extra syntax
+au FileType c,h setlocal filetype=c.doxygen
+au FileType cpp,hpp setlocal filetype=cpp.doxygen
 
 " Tables in markdown
 au FileType markdown let g:table_mode_corner="|"
