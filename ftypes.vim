@@ -19,3 +19,7 @@ au FileType cpp,hpp setlocal filetype=cpp.doxygen
 
 " Tables in markdown
 au FileType markdown let g:table_mode_corner="|"
+
+" Markdown extensions
+autocmd! BufRead,BufNewFile *.text  set filetype=markdown
+autocmd! BufRead,BufNewFile *.md    set filetype=markdown
