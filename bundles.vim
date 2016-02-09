@@ -33,6 +33,9 @@ Plugin 'tikhomirov/vim-glsl'
 Plugin 'justinmk/vim-syntax-extra'
 Plugin 'wting/rust.vim'
 
+" Literate programming
+Plugin 'khardix/vim-literate'
+
 " Completion and syntax checking
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'rdnetto/YCM-Generator'
