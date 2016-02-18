@@ -23,6 +23,7 @@ Plugin 'godlygeek/tabular'
 " Syntax highlight
 Plugin 'hdima/python-syntax'
 Plugin 'hail2u/vim-css3-syntax'
+Plugin 'ap/vim-css-color'
 Plugin 'peterhoeg/vim-qml'
 Plugin 'othree/html5.vim'
 Plugin 'kchmck/vim-coffee-script'
