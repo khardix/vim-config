@@ -23,7 +23,7 @@ else # use system clang
 fi
 
 ec=0
-cmake --build . --target ycm_support_libs --config Release || ec=$?
+cmake --build . --config Release || ec=$?
 
 popd
 
