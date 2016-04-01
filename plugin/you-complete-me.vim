@@ -13,4 +13,5 @@ let g:ycm_warning_symbol = '‼'
 let g:ycm_error_symbol   = '⁇'
 
 " Use python3 completion
+let g:ycm_path_to_python_interpreter = '/usr/bin/python3'
 let g:ycm_python_binary_path = '/usr/bin/python3'

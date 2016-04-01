@@ -13,13 +13,17 @@ YCM_DIR="$( cd "$(dirname "${BASH_SOURCE[0]}")" && pwd )/bundle/YouCompleteMe/th
 
 pushd "$(mktemp --directory)"
 
+function cmake_common {
+  cmake -G "Unix Makefiles" -DUSE_PYTHON2=OFF $@ . "$YCM_DIR"
+}
+
 if [ "$CLANG_URL" ]; then # get prebuilt clang and use it for generating makefiles
   mkdir -p "$CLANG_DIR"
   wget "$CLANG_URL" -O - | tar -xJ --strip-components=1 -C "$CLANG_DIR"
 
-  cmake -G "Unix Makefiles" -DPATH_TO_LLVM_ROOT="$CLANG_DIR" . "$YCM_DIR"
+  cmake_common -DPATH_TO_LLVM_ROOT="$CLANG_DIR"
 else # use system clang
-  cmake -G "Unix Makefiles" -DUSE_SYSTEM_LIBCLANG=ON . "$YCM_DIR"
+  cmake_common -DUSE_SYSTEM_LIBCLANG=ON
 fi
 
 ec=0
