@@ -22,3 +22,6 @@ au FileType markdown let g:table_mode_corner="|"
 
 " Extra markdown extensions
 autocmd! BufRead,BufNewFile *.text  set filetype=markdown
+
+" Whitespace nuking in certain filetypes
+autocmd FileType c,cpp,python,python3 autocmd BufWritePre * :%s/\s\+$//e

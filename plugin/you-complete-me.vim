@@ -11,3 +11,6 @@ let g:ycm_always_populate_location_list = 1
 " Custom error and warning symbols
 let g:ycm_warning_symbol = '‼'
 let g:ycm_error_symbol   = '⁇'
+
+" Use python3 completion
+let g:ycm_python_binary_path = '/usr/bin/python3'
