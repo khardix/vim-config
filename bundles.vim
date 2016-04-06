@@ -33,6 +33,7 @@ Plugin 'tmux-plugins/vim-tmux'
 Plugin 'tikhomirov/vim-glsl'
 Plugin 'justinmk/vim-syntax-extra'
 Plugin 'wting/rust.vim'
+Plugin 'lifepillar/pgsql.vim'
 
 " Literate programming
 Plugin 'khardix/vim-literate'
