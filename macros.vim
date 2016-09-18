@@ -2,8 +2,13 @@
 let mapleader = ","
 let maplocalleader = ","
 
+" Locale (czech) date
 nnoremap <localleader>id "=strftime("%a %e. %B %Y")<CR>P
-inoremap <localleader>id <C-R>"=strftime("%a %e. %B %Y")<CR>
+inoremap <localleader>id <C-R>=strftime("%a %e. %B %Y")<CR>
+
+" International datetime
+nnoremap <localleader>iid "=strftime("%Y-%m-%d %H:%M %Z")<CR>P
+inoremap <localleader>iid <C-R>=strftime("%Y-%m-%d %H:%M %Z")<CR>
 
 " Czech quotes - opening and closing
 inoremap <localleader>,, <C-V>u201e
