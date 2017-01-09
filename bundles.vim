@@ -35,6 +35,7 @@ Plugin 'justinmk/vim-syntax-extra'
 Plugin 'wting/rust.vim'
 Plugin 'lifepillar/pgsql.vim'
 Plugin 'lepture/vim-jinja'
+Plugin 'gisraptor/vim-lilypond-integrator'
 
 " Literate programming
 Plugin 'khardix/vim-literate'
