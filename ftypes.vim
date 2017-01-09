@@ -25,3 +25,6 @@ autocmd! BufRead,BufNewFile *.text  set filetype=markdown
 
 " Whitespace nuking in certain filetypes
 autocmd FileType c,cpp,python,python3 autocmd BufWritePre * :%s/\s\+$//e
+
+" Automatic spellcheck
+autocmd FileType gitcommit set spelllang=en spell
