@@ -16,6 +16,7 @@ nnoremap <LocalLeader>tb :TagbarToggle<CR>
 "nnoremap [l :lprevious<CR>
 
 nnoremap <F9> :make<CR>
+nnoremap cc :cc<CR>
 nnoremap c] :cnext<CR>
 nnoremap c[ :cprev<CR>
 nnoremap <LocalLeader>l :clist<CR>
