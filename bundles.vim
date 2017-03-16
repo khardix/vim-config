@@ -19,6 +19,9 @@ Plugin 'majutsushi/tagbar'
 Plugin 'tpope/vim-dispatch'
 " Needed by plasticboy/vim-markdown
 Plugin 'godlygeek/tabular'
+" Git integration
+Plugin 'airblade/vim-gitgutter'
+Plugin 'tpope/vim-fugitive'
 
 " Syntax highlight
 Plugin 'hdima/python-syntax'
