@@ -3,13 +3,8 @@
 " Remove default flags
 let g:vimtex_latexmk_options = ""
 
-"let g:vimtex_quickfix_ignored_warnings = [
-"  \ 'Underfull',
-"  \ 'Overfull',
-"  \ 'specifier changed to',
-"  \ 'xparse/redefine-command',
-"  \ ]
-let g:vimtex_quickfix_ignore_all_warnings = 1
+" Disable warnings
+let g:vimtex_quickfix_warnings = {'default': 0}
 
 " YCM support
 if !exists('g:ycm_semantic_triggers')
