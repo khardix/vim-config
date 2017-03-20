@@ -40,6 +40,8 @@ Plugin 'lifepillar/pgsql.vim'
 Plugin 'lepture/vim-jinja'
 Plugin 'gisraptor/vim-lilypond-integrator'
 Plugin 'Rykka/riv.vim'
+" Needed by vimtex
+Plugin 'hura/vim-asymptote'
 
 " Literate programming
 Plugin 'khardix/vim-literate'
