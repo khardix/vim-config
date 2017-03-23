@@ -1,6 +1,6 @@
 " Flake* plugin configuration
 
-let g:flake8_cmd="/usr/bin/python3-flake8"
+let g:flake8_cmd="flake8"
 
 let g:flake8_quickfix_location="top"
 
