@@ -13,6 +13,7 @@ Plugin 'vim-scripts/dante.vim'
 Plugin 'nanotech/jellybeans.vim'
 
 " IDE
+Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'scrooloose/nerdtree'
 Plugin 'spf13/PIV'
 Plugin 'majutsushi/tagbar'
