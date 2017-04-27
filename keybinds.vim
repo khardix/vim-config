@@ -31,5 +31,8 @@ nnoremap <C-l> <C-w>l
 nnoremap <C-e> <C-a>
 vnoremap <C-e> <C-a>
 
+" demarcation comments
+nnoremap <silent> <LocalLeader>d :s@\v\a(\a<bar>\s)*$@\=repeat("=",(72-len(submatch(0)))/2)."<Space>".submatch(0)."<Space>".repeat("=",(72-len(submatch(0)))/2)@<CR>:nohl<CR>
+
 " ===== Digraphs =====
 digraph :- 8866
