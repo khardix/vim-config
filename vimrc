@@ -90,7 +90,8 @@ set pastetoggle=<F11> " Toggle nice text pasting from outside vim
 set foldmethod=marker
 
 " === Ignoring ===
-set wildignore=*.pyc,*.o
+set wildignore+=*.o
+set wildignore+=*/__pycache__,*.pyc,*.egg-info
 
 " === Macros ===
 source ~/.vim/macros.vim
