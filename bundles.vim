@@ -41,6 +41,7 @@ Plugin 'lifepillar/pgsql.vim'
 Plugin 'lepture/vim-jinja'
 Plugin 'gisraptor/vim-lilypond-integrator'
 Plugin 'Rykka/riv.vim'
+Plugin 'cespare/vim-toml'
 " Needed by vimtex
 Plugin 'hura/vim-asymptote'
 
