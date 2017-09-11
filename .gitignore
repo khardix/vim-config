@@ -12,3 +12,7 @@ Session.vim
 *~
 # Auto-generated tag files
 tags
+
+# Auto-installed plugins
+autoload/plug.vim
+plugged/*
