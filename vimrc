@@ -78,6 +78,14 @@ nnoremap <silent> gt :bnext<cr>
 nnoremap <silent> gT :bprev<cr>
 nnoremap <silent> <leader>d :bdelete<cr>
 
+" NetRW -- directory overview
+let g:netrw_liststyle = 1   " Detailed view
+let g:netrw_sizestyle = "H" " Human-readable sizes
+let g:netrw_list_hide = '\(^\|\s\s\)\zs\.\S\+' " hide dotfiles -- copied
+let g:netrw_hide      = 1   " Hide files by default
+let g:netrw_banner    = 0   " Do not show banner
+nnoremap <silent> <leader>e :Explore!<cr>
+
 " Auto-completion -- general
 set completeopt=menuone,noinsert,noselect " show menu, wait for user choice
 set shortmess+=c    " Disable verbose completion status messages
