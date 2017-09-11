@@ -49,3 +49,16 @@ set ignorecase      " Case-insensitive search
 set smartcase       " Case-sensitive search with capital letters
 " => Key binding for clearing the highlight
 nnoremap <leader><space> :nohls<enter>
+
+" Swap and undo
+set undofile        " Persistent undo
+" => Platform-specific file path settings
+if has("win32")
+    set directory=$HOME\vimfiles\swap,$TEMP
+    set backupdir=$HOME\vimfiles\backup,$TEMP
+    set undodir=$HOME\vimfiles\undo,$TEMP
+else
+    set directory=~/.vim/swap,/tmp
+    set backupdir=~/.vim/backup,/tmp
+    set undodir=~/.vim/undo,/tmp
+endif
