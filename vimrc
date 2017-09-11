@@ -6,6 +6,12 @@
 " Plugin management
 runtime plugs.vim
 
+" General functionality
+let mapleader = ',' " Start key binds with comma
+
+set spell spelllang=en_us " Check US English spelling by default
+set splitright      " Split windows to right by default
+
 " Basic look and feel
 
 " => Escape sequences for 24-bit colors
@@ -23,7 +29,7 @@ set numberwidth=2
 
 " => Line wrapping
 set nowrap          " Do not wrap long lines
-set textwidth=79    " Break line at whitespace after 79 characters
+set textwidth=79    " Break line at white space after 79 characters
 set colorcolumn=80  " Show ruler at the break boundary
 
 " => Indentation
