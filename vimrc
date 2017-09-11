@@ -79,3 +79,12 @@ inoremap <expr> <c-y> mucomplete#popup_exit("\<c-y>")
 inoremap <expr>  <cr> mucomplete#popup_exit("\<cr>")
 " => Start automatic completion on file load
 let g:mucomplete#enable_auto_at_startup = 1
+
+" Auto-formatting -- general
+let g:autoformat_autoindent = 0 " Do not re-indent
+let g:autoformat_retab = 0 " Do not expand tabs
+let g:autoformat_remove_trailing_spaces = 1 " Remove trailing spaces
+" => Auto-format on close
+augroup aformat
+    autocmd! BufWrite * :Autoformat
+augroup end

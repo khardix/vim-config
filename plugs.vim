@@ -28,6 +28,13 @@ Plug 'sheerun/vim-polyglot'     " Omnibus language support
 Plug 'lifepillar/vim-mucomplete' " minimal completion engine
 Plug 'davidhalter/jedi-vim'     " Python semantic completion
 
+" Auto-formatting and syntax checking
+Plug 'vim-syntastic/syntastic'  " Omnibus syntax checking
+Plug 'Chiel92/vim-autoformat'   " Omnibus auto formatter
+
+" Miscellaneous
+Plug 'tpope/vim-commentary'     " Quick commenting
+
 call plug#end()
 
 " vim:set filetype=vim:
