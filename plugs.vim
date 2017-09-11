@@ -19,4 +19,9 @@ endif
 " Install the plugins
 call plug#begin(s:vimdir . '/plugged')
 
+" Rock-bottom basics
+Plug 'tpope/vim-sensible'       " Sensible default settings
+Plug 'flazz/vim-colorschemes'   " Omnibus colorscheme support
+Plug 'sheerun/vim-polyglot'     " Omnibus language support
+
 call plug#end()
