@@ -25,3 +25,5 @@ Plug 'flazz/vim-colorschemes'   " Omnibus colorscheme support
 Plug 'sheerun/vim-polyglot'     " Omnibus language support
 
 call plug#end()
+
+" vim:set filetype=vim:
