@@ -26,6 +26,7 @@ Plug 'sheerun/vim-polyglot'     " Omnibus language support
 
 " Auto-completion
 Plug 'lifepillar/vim-mucomplete' " minimal completion engine
+Plug 'davidhalter/jedi-vim'     " Python semantic completion
 
 call plug#end()
 
