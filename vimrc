@@ -48,7 +48,7 @@ set hlsearch        " Highlight the search results
 set ignorecase      " Case-insensitive search
 set smartcase       " Case-sensitive search with capital letters
 " => Key binding for clearing the highlight
-nnoremap <leader><space> :nohls<enter>
+nnoremap <silent> <leader><space> :nohls<enter>
 
 " Swap and undo
 set undofile        " Persistent undo
