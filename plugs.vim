@@ -24,6 +24,9 @@ Plug 'tpope/vim-sensible'       " Sensible default settings
 Plug 'flazz/vim-colorschemes'   " Omnibus colorscheme support
 Plug 'sheerun/vim-polyglot'     " Omnibus language support
 
+" Auto-completion
+Plug 'lifepillar/vim-mucomplete' " minimal completion engine
+
 call plug#end()
 
 " vim:set filetype=vim:
