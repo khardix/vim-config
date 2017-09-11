@@ -41,3 +41,11 @@ set shiftround      " Round indentation to multiples of shiftwidth
 
 set autoindent      " Auto-indent next lines
 set cindent         " Auto-indent C intelligently
+
+" Searching and replacing
+set gdefault        " /g on by default in substitutions
+set hlsearch        " Highlight the search results
+set ignorecase      " Case-insensitive search
+set smartcase       " Case-sensitive search with capital letters
+" => Key binding for clearing the highlight
+nnoremap <leader><space> :nohls<enter>
