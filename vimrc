@@ -63,12 +63,15 @@ else
     set undodir=~/.vim/undo,/tmp
 endif
 
-" Tab management
-set showtabline=1   " Show tab line if there are more than one tab
-" => Open all files in tabs
-augroup TabPages
-    autocmd! VimEnter * if !&diff | tab all | tabfirst | endif
-augroup END
+" Tab and buffer management
+set hidden          " Allow for unsaved buffers in background
+set showtabline=1   " Show tabline for at least two lines
+set autowrite       " Auto save on file switch
+set confirm         " Ask to save instead of error on :q
+" => Remap tab switching to work on buffers
+nnoremap <silent> gt :bnext<cr>
+nnoremap <silent> gT :bprev<cr>
+nnoremap <silent> <leader>d :bdelete<cr>
 
 " Auto-completion -- general
 set completeopt=menuone,noinsert,noselect " show menu, wait for user choice

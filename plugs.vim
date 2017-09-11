@@ -32,6 +32,9 @@ Plug 'davidhalter/jedi-vim'     " Python semantic completion
 Plug 'vim-syntastic/syntastic'  " Omnibus syntax checking
 Plug 'Chiel92/vim-autoformat'   " Omnibus auto formatter
 
+" UI
+Plug 'ap/vim-buftabline'        " Show buffers in tabline
+
 " Miscellaneous
 Plug 'tpope/vim-commentary'     " Quick commenting
 
