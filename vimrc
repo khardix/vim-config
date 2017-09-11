@@ -62,3 +62,10 @@ else
     set backupdir=~/.vim/backup,/tmp
     set undodir=~/.vim/undo,/tmp
 endif
+
+" Tab management
+set showtabline=1   " Show tab line if there are more than one tab
+" => Open all files in tabs
+augroup TabPages
+    autocmd! VimEnter * if !&diff | tab all | tabfirst | endif
+augroup END
