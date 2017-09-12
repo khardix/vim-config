@@ -88,6 +88,13 @@ inoremap <expr>  <cr> mucomplete#popup_exit("\<cr>")
 " => Start automatic completion on file load
 let g:mucomplete#enable_auto_at_startup = 1
 
+" Syntax checking -- general
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_loc_list_height = 5
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
 " Auto-formatting -- general
 let g:autoformat_autoindent = 0 " Do not re-indent
 let g:autoformat_retab = 0 " Do not expand tabs
