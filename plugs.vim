@@ -11,7 +11,7 @@ if empty(glob(s:plugin_manager))
     let s:install_cmd += ['--output', s:plugin_manager]
     let s:install_cmd += ['https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim']
 
-    execute 'silent! ' . join(s:install_cmd)
+    execute 'silent !' . join(s:install_cmd)
 
     autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
