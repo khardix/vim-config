@@ -3,14 +3,19 @@
 " Created: 2017-09-11
 """
 
-" Plugin management
-runtime plugs.vim
-
 " General functionality
 let mapleader = ',' " Start key binds with comma
 
 set spell spelllang=en_us " Check US English spelling by default
 set splitright      " Split windows to right by default
+
+" => Load Python 3 if available
+if has('python3')
+elseif has('python')
+endif
+
+" Plugin management
+runtime plugs.vim
 
 " Basic look and feel
 " => Escape sequences for 24-bit colors
