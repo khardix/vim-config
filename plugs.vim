@@ -37,6 +37,9 @@ Plug 'ap/vim-buftabline'        " Show buffers in tabline
 
 " Miscellaneous
 Plug 'tpope/vim-commentary'     " Quick commenting
+Plug 'tpope/vim-repeat'         " The '.' even mightier
+Plug 'tpope/vim-surround'       " Mapping for surrounding manipulation
+Plug 'tpope/vim-unimpaired'     " Paired movement mappings
 
 call plug#end()
 

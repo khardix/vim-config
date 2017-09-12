@@ -94,6 +94,8 @@ let g:syntastic_loc_list_height = 5
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
+" => Quick jump to current error
+nnoremap <silent> <leader>l :ll<cr>
 
 " Auto-formatting -- general
 let g:autoformat_autoindent = 0 " Do not re-indent
