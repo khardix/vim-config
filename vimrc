@@ -130,3 +130,21 @@ let g:autoformat_remove_trailing_spaces = 1 " Remove trailing spaces
 augroup aformat
     autocmd! BufWrite * :Autoformat
 augroup end
+
+" Prose writing
+set conceallevel=2      " Hide inline formatting markup
+" => Goyo setup
+function! s:goyo_enter()
+    setlocal showtabline=0
+    Limelight
+endfunction
+
+function! s:goyo_leave()
+    Limelight!
+    setlocal showtabline=1
+endfunction
+
+augroup goyo_setup
+    autocmd! User GoyoEnter nested call <SID>goyo_enter()
+    autocmd! User GoyoLeave nested call <SID>goyo_leave()
+augroup end

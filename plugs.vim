@@ -36,6 +36,10 @@ Plug 'Chiel92/vim-autoformat'   " Omnibus auto formatter
 Plug 'ap/vim-buftabline'        " Show buffers in tabline
 Plug 'christoomey/vim-tmux-navigator'  " Simplify tmux navigation
 
+" Prose
+Plug 'junegunn/goyo.vim'        " Distraction-free writing
+Plug 'junegunn/limelight.vim'   " Paragraph focusing
+
 " Miscellaneous
 Plug 'tpope/vim-commentary'     " Quick commenting
 Plug 'tpope/vim-repeat'         " The '.' even mightier
