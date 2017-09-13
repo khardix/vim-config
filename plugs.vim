@@ -34,6 +34,7 @@ Plug 'Chiel92/vim-autoformat'   " Omnibus auto formatter
 
 " UI
 Plug 'ap/vim-buftabline'        " Show buffers in tabline
+Plug 'christoomey/vim-tmux-navigator'  " Simplify tmux navigation
 
 " Miscellaneous
 Plug 'tpope/vim-commentary'     " Quick commenting

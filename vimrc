@@ -78,6 +78,17 @@ nnoremap <silent> gt :bnext<cr>
 nnoremap <silent> gT :bprev<cr>
 nnoremap <silent> <leader>d :bdelete<cr>
 
+" Split pane movement
+let g:tmux_navigator_no_mappings = 1
+let g:tmux_navigator_disable_when_zoomed = 1
+" => Create Alt-based keymaps
+execute "set <M-h>=\eh <M-j>=\ej <M-k>=\ek <M-l>=\el"
+" => Use Alt-based keymaps
+nnoremap <silent> <M-h> :TmuxNavigateLeft<cr>
+nnoremap <silent> <M-j> :TmuxNavigateDown<cr>
+nnoremap <silent> <M-k> :TmuxNavigateUp<cr>
+nnoremap <silent> <M-l> :TmuxNavigateRight<cr>
+
 " NetRW -- directory overview
 let g:netrw_liststyle = 3   " Tree view
 let g:netrw_sizestyle = "H" " Human-readable sizes
