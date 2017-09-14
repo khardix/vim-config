@@ -25,6 +25,12 @@ let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 set termguicolors
 " => Set colorscheme
 colorscheme crayon
+" => Set unicode fill characters
+set fillchars+=vert:│
+set fillchars+=fold:┄
+set fillchars+=diff:═
+" => Highlight status line of non-current window
+highlight StatusLineNC ctermfg=fg ctermbg=bg
 
 " Line numbering
 set number
