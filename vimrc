@@ -139,6 +139,20 @@ augroup end
 
 " Prose writing
 set conceallevel=2      " Hide inline formatting markup
+
+" => Markdown syntax
+augroup pandoc_syntax
+    autocmd! BufNewFile,BufFilePre,BufRead *.md set filetype=markdown.pandoc
+    autocmd! BufNewFile,BufFilePre,BufRead *.mkd set filetype=markdown.pandoc
+    autocmd! BufNewFile,BufFilePre,BufRead *.markdown set filetype=markdown.pandoc
+augroup end
+
+let g:pandoc#syntax#conceal#use = 0
+let g:pandoc#syntax#codeblocks#embeds#langs = [
+    \ 'python', 'vim', 'make', 'bash=sh',
+    \ 'html', 'css', 'scss', 'javascript',
+    \ ]
+
 " => Goyo setup
 function! s:goyo_enter()
     setlocal showtabline=0

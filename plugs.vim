@@ -37,6 +37,7 @@ Plug 'ap/vim-buftabline'        " Show buffers in tabline
 Plug 'christoomey/vim-tmux-navigator'  " Simplify tmux navigation
 
 " Prose
+Plug 'vim-pandoc/vim-pandoc-syntax'  " Pandoc-enhanced markdown syntax
 Plug 'junegunn/goyo.vim'        " Distraction-free writing
 Plug 'junegunn/limelight.vim'   " Paragraph focusing
 
