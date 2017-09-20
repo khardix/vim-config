@@ -15,4 +15,5 @@ tags
 
 # Auto-installed plugins
 autoload/plug.vim
+autoload/plug.vim.old
 plugged/*
