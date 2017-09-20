@@ -1,0 +1,14 @@
+# Dotbot configuration for setting up configuration links
+
+- shell:
+  - description: Ensure vim-plug is installed
+    command: '[ -r autoload/plug.vim ] || vim -e +qall'
+  - description: Install and update all plugins
+    stderr: False
+    command: vim +PlugUpgrade +PlugUpdate +qall
+
+- link:
+    '~/.vim':
+      path: ''
+      relink: True
+      force: True
