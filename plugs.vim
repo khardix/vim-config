@@ -27,6 +27,7 @@ Plug 'sheerun/vim-polyglot'     " Omnibus language support
 " Auto-completion
 Plug 'lifepillar/vim-mucomplete' " minimal completion engine
 Plug 'davidhalter/jedi-vim'     " Python semantic completion
+Plug 'rip-rip/clang_complete'   " C/C++ semantic completion
 
 " Auto-formatting and syntax checking
 Plug 'vim-syntastic/syntastic'  " Omnibus syntax checking
