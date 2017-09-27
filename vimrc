@@ -129,6 +129,19 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 " => Quick jump to current error
 nnoremap <silent> <leader>l :ll<cr>
+" => Disable checking in read-only buffers
+augroup syntax_checking
+    function! SetCheckingMode()
+        if &readonly
+            let b:syntastic_mode = 'passive'
+        else
+            let b:syntastic_mode = 'active'
+        endif
+    endfunction
+
+    autocmd! BufEnter * call SetCheckingMode()
+augroup end
+
 
 " Auto-formatting -- general
 let g:autoformat_autoindent = 0 " Do not re-indent
