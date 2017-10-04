@@ -152,6 +152,16 @@ augroup aformat
     autocmd! BufWrite * :Autoformat
 augroup end
 
+" Code snippets
+" => Add snippets to completion
+call add(g:mucomplete#chains['default'], 'ulti')
+" => Change default keybindings to work in tmux
+let g:UltiSnipsExpandTrigger = "<c-t>"
+let g:UltiSnipsJumpForwardTrigger = "<c-t>"
+let g:UltiSnipsJumpBackwardTrigger = "<c-y>"
+" => Use low case directory name
+let g:UltiSnipsSnippetDirectories = ['ulti-snips', 'UltiSnips']
+
 " Prose writing
 set conceallevel=2      " Hide inline formatting markup
 

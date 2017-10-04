@@ -33,6 +33,10 @@ Plug 'rip-rip/clang_complete'   " C/C++ semantic completion
 Plug 'vim-syntastic/syntastic'  " Omnibus syntax checking
 Plug 'Chiel92/vim-autoformat'   " Omnibus auto formatter
 
+" Code snippets
+Plug 'sirver/ultisnips'         " Snippets framework
+Plug 'honza/vim-snippets'       " Pre-defined snippets
+
 " Git integration
 Plug 'tpope/vim-fugitive'       " Use git from inside ViM
 Plug 'airblade/vim-gitgutter'   " Show git status in gutter
