@@ -33,6 +33,9 @@ set fillchars+=fold:┄
 set fillchars+=diff:═
 " => Highlight status line of non-current window
 highlight StatusLineNC ctermfg=fg ctermbg=bg
+" Special early syntax settings
+let g:tex_flavor = 'latex'      " Use LaTeX syntax for .tex files
+let g:load_doxygen_syntax = 1   " Load Doxygen syntax for supported filetypes
 
 " Line numbering
 set number
