@@ -99,6 +99,8 @@ nnoremap <silent> <M-h> :TmuxNavigateLeft<cr>
 nnoremap <silent> <M-j> :TmuxNavigateDown<cr>
 nnoremap <silent> <M-k> :TmuxNavigateUp<cr>
 nnoremap <silent> <M-l> :TmuxNavigateRight<cr>
+" => Create TMUX-compatible keymaps
+nnoremap <c-e> <c-a>
 
 " NetRW -- directory overview
 let g:netrw_liststyle = 3   " Tree view
