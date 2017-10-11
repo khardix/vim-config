@@ -26,7 +26,8 @@ if match(['screen', 'tmux', 'st', 'xterm'], $TERM)
     set termguicolors
 endif
 " => Set colorscheme
-colorscheme crayon
+set background=dark
+colorscheme gruvbox
 " => Set unicode fill characters
 set fillchars+=vert:│
 set fillchars+=fold:┄
