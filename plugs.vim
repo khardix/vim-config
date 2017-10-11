@@ -55,6 +55,7 @@ Plug 'tpope/vim-commentary'     " Quick commenting
 Plug 'tpope/vim-repeat'         " The '.' even mightier
 Plug 'tpope/vim-surround'       " Mapping for surrounding manipulation
 Plug 'tpope/vim-unimpaired'     " Paired movement mappings
+Plug 'tpope/vim-eunuch'         " Unix shell commands goodies
 
 call plug#end()
 
