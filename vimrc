@@ -199,3 +199,8 @@ augroup goyo_setup
     autocmd! User GoyoEnter nested call <SID>goyo_enter()
     autocmd! User GoyoLeave nested call <SID>goyo_leave()
 augroup end
+
+" Automation of boring formatting
+" => Switch between one-line and multi-line function call
+let g:argwrap_tail_comma = 1
+nnoremap <silent> <leader>a :ArgWrap<cr>
