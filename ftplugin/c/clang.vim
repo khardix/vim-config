@@ -23,12 +23,19 @@ function! s:clang_use_database() abort
         let g:syntastic_c_clang_tidy_post_args = ['--'] + split($CFLAGS)
     endif
 endfunction
+call s:clang_use_database()  " For new buffer
 
 " === Auto-commands ===
-augroup clang_c_settings
-    " Re-evaluate compilation database setting on database change
-    autocmd! User CCompileDb call s:clang_use_database()
-augroup end
+augroup on_compile_db_change_c  " Pure C specific auto-commands
+    autocmd!
 
-" Fire CCompileDb in order to detect database for new buffer
-doautocmd <nomodeline> User CCompileDb
+    " Re-evaluate compilation database setting on database change
+    autocmd User CCompileDb call s:clang_use_database()
+
+augroup on_compile_db_change    " Shared C/C++ auto-commands
+    autocmd!
+
+    " Re-run syntastic to pick up new settings
+    autocmd User CCompileDb SyntasticCheck
+
+augroup end
