@@ -126,6 +126,11 @@ inoremap <expr> <c-y> mucomplete#popup_exit("\<c-y>")
 inoremap <expr>  <cr> mucomplete#popup_exit("\<cr>")
 " => Start automatic completion on file load
 let g:mucomplete#enable_auto_at_startup = 1
+" => Prepare dictionary for additional completion methods
+" setting in ftplugin does not work :(
+let g:mucomplete#user_mappings = {
+\   'sqla': "\<c-c>a",
+\}
 
 " Syntax checking -- general
 let g:syntastic_always_populate_loc_list = 1
