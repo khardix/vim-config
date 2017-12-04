@@ -57,7 +57,7 @@ set smarttab        " Use shiftwidth at the beginning of a line
 set shiftround      " Round indentation to multiples of shiftwidth
 
 set autoindent      " Auto-indent next lines
-set cindent         " Auto-indent C intelligently
+set smartindent     " Auto-indent code intelligently
 
 " Searching and replacing
 set gdefault        " /g on by default in substitutions
