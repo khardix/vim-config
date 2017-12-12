@@ -175,6 +175,7 @@ let g:UltiSnipsSnippetDirectories = ['ulti-snips', 'UltiSnips']
 
 " Prose writing
 set conceallevel=2      " Hide inline formatting markup
+set list listchars=nbsp:~,tab:╞═,extends:⇉,precedes:⇇  " Show special characters
 
 " => Markdown syntax
 augroup pandoc_syntax
