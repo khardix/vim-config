@@ -3,7 +3,7 @@
 set cindent nosmartindent       " Switch to C-specific indentation
 
 " Do not indent access specifiers (public, protected, private)
-set cinoptions+=g0
+set cinoptions+=g-s
 " In unclosed parenthesis:
 " – one indent
 " - closing parenthesis on same level as original line
