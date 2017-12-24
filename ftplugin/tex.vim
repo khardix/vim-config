@@ -1,1 +1,1 @@
-let g:syntastic_tex_checkers = []
+let g:neomake_tex_enabled_makers = ['chktex']

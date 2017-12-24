@@ -133,24 +133,23 @@ let g:mucomplete#user_mappings = {
 \}
 
 " Syntax checking -- general
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_loc_list_height = 5
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
+let g:neomake_open_list = 2
+let g:neomake_list_height = 5
+call neomake#configure#automake('rw')
 " => Quick jump to current error
 nnoremap <silent> <leader>l :ll<cr>
 " => Disable checking in read-only buffers
 augroup syntax_checking
-    function! SetCheckingMode()
+    function! SetCheckingMode() abort
         if &readonly
-            let b:syntastic_mode = 'passive'
+            NeomakeDisableBuffer
         else
-            let b:syntastic_mode = 'active'
+            NeomakeEnableBuffer
         endif
     endfunction
 
-    autocmd! BufEnter * call SetCheckingMode()
+    autocmd!
+    autocmd BufEnter * call SetCheckingMode()
 augroup end
 
 

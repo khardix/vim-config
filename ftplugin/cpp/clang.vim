@@ -6,41 +6,29 @@
 let g:clang_user_options = $CXXFLAGS  " Use environment settings
 
 " === Linting ===
-let g:syntastic_cpp_checkers = ['clang_tidy']  " Declare used checkers
-
-" => clang-tidy
-" Tweak used checks - only static analyzer, core guidelines, modernize and readability
-let g:syntastic_cpp_clang_tidy_args = [
-\    '-checks=-*,clang-analyzer-*,cppcoreguidelines-*,modernize-*,readability-*',
-\]
-
-" === Compilation database settings ===
+let b:neomake_cpp_enabled_makers = ['clangtidy']  " Declare used checkers
 
 " Detect compilation database and use it if possible
-function! s:clang_use_database() abort
+function! s:clangtidy_args() abort
+    let l:pre_file_args = ['-checks=-*,clang-analyzer-*,cppcoreguidelines-*,modernize-*,readability-*']
+
     if khardix#clang#compilation_database() != ''
         " Use database
-        let g:syntastic_cpp_clang_tidy_post_args = ''
-
+        let l:post_file_args = []
     else
         " Use environment settings
-        let g:syntastic_cpp_clang_tidy_post_args = ['--'] + split($CXXFLAGS)
-
+        let l:post_file_args = ['--'] + split($CXXFLAGS)
     endif
+
+    return l:pre_file_args + ['%:p'] + l:post_file_args
 endfunction
-call s:clang_use_database()  " For new buffer
+let b:neomake_cpp_clangtidy_args = funcref('s:clangtidy_args')
 
 " === Auto-commands ===
-augroup on_compile_db_change_cpp  " C++ specific auto-commands
-    autocmd!
-
-    " Re-evaluate compilation database setting on database change
-    autocmd User CCompileDb call s:clang_use_database()
-
 augroup on_compile_db_change    " Shared C/C++ auto-commands
     autocmd!
 
-    " Re-run syntastic to pick up new settings
-    autocmd User CCompileDb SyntasticCheck
+    " Re-run neomake to pick up new settings
+    autocmd User CCompileDb Neomake
 
 augroup end
