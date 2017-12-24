@@ -30,7 +30,7 @@ Plug 'davidhalter/jedi-vim'     " Python semantic completion
 Plug 'rip-rip/clang_complete'   " C/C++ semantic completion
 
 " Auto-formatting and syntax checking
-Plug 'vim-syntastic/syntastic'  " Omnibus syntax checking
+Plug 'neomake/neomake'          " Omnibus syntax checking
 Plug 'Chiel92/vim-autoformat'   " Omnibus auto formatter
 Plug 'foosoft/vim-argwrap'      " Easily wrap multi-line function arguments
 
