@@ -120,10 +120,6 @@ augroup end
 " Auto-completion -- general
 set completeopt=menuone,noinsert,noselect " show menu, wait for user choice
 set shortmess+=c    " Disable verbose completion status messages
-" => Completion keybindings -- use expression result for action
-inoremap <expr> <c-e> mucomplete#popup_exit("\<c-e>")
-inoremap <expr> <c-y> mucomplete#popup_exit("\<c-y>")
-inoremap <expr>  <cr> mucomplete#popup_exit("\<cr>")
 " => Start automatic completion on file load
 let g:mucomplete#enable_auto_at_startup = 1
 " => Prepare dictionary for additional completion methods
