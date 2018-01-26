@@ -11,9 +11,11 @@ let b:neomake_cpp_enabled_makers = ['clangtidy']  " Declare used checkers
 " Detect compilation database and use it if possible
 function! s:clangtidy_args() abort
     let l:pre_file_args = ['-checks=-*,clang-analyzer-*,cppcoreguidelines-*,modernize-*,readability-*']
+    let l:database_file = khardix#clang#compilation_database()
 
-    if khardix#clang#compilation_database() != ''
+    if l:database_file != ''
         " Use database
+        let l:pre_file_args += ['-p='.fnamemodify(l:database_file, ':p:h')]
         let l:post_file_args = []
     else
         " Use environment settings
