@@ -45,7 +45,6 @@ set numberwidth=2
 
 " Line wrapping
 set nowrap          " Do not wrap long lines
-set textwidth=79    " Break line at white space after 79 characters
 set colorcolumn=80  " Show ruler at the break boundary
 
 " Indentation
