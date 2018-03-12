@@ -6,7 +6,7 @@
 " General functionality
 let mapleader = ',' " Start key binds with comma
 
-set spell spelllang=en_us " Check US English spelling by default
+set spell spelllang=en_us,cs " Check US English and Czech spelling
 set splitright      " Split windows to right by default
 
 " => Load Python 3 if available
@@ -202,6 +202,15 @@ endfunction
 augroup goyo_setup
     autocmd! User GoyoEnter nested call <SID>goyo_enter()
     autocmd! User GoyoLeave nested call <SID>goyo_leave()
+augroup end
+
+" => Email composition
+let g:qcc_query_command = system('neomutt -Q query_command 2>/dev/null')
+let g:qcc_query_command = substitute(g:qcc_query_command, '^query_command="\(.*\)"\n', '\1','')
+let g:qcc_multiline = 1
+let g:qcc_multiline_pattern = '^\s' " only look for header if the line starts with whitespace
+augroup email
+    autocmd FileType mail setlocal omnifunc=QueryCommandComplete
 augroup end
 
 " Automation of boring formatting
