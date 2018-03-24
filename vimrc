@@ -27,6 +27,7 @@ if match(['screen', 'tmux', 'st', 'xterm'], $TERM)
 endif
 " => Set colorscheme
 set background=dark
+let g:gruvbox_contrast_dark='hard'
 colorscheme gruvbox
 " => Set unicode fill characters
 set fillchars+=vert:│
