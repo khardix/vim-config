@@ -38,6 +38,7 @@ Plug 'foosoft/vim-argwrap'      " Easily wrap multi-line function arguments
 " Code snippets
 Plug 'sirver/ultisnips'         " Snippets framework
 Plug 'honza/vim-snippets'       " Pre-defined snippets
+Plug 'wellle/targets.vim'       " More text objects
 
 " Git integration
 Plug 'tpope/vim-fugitive'       " Use git from inside ViM
