@@ -1,14 +1,16 @@
 " Setup and configuration of clang-based tools and plugins
 
 " === Basics ===
-let g:deoplete#sources['c'] = g:deoplete#sources['_']
 let g:clang_library_path = '/usr/lib64'  " Path to clang library .so
+let g:clang_snippets_engine = 'ultisnips'
 
 " === Code completion ===
-let g:cland_complete_auto = 0
 let g:clang_user_options = $CFLAGS  " Use environment settings
 " Utilize compilation database for code completion, if possible
 let g:clang_auto_user_options = '.clang_complete, compile_commands.json, path'
+" Complete arguments and template parameters
+let g:clang_snippets = 1
+let g:clang_complete_optional_args_in_snippets = 1
 
 " If found (and only if found), point the clang_complete to the database directory
 let s:clang_compilation_database = khardix#clang#compilation_database()
