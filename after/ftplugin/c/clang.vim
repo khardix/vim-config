@@ -6,6 +6,12 @@ let g:clang_snippets_engine = 'ultisnips'
 
 " === Code completion ===
 let g:clang_user_options = $CFLAGS  " Use environment settings
+" Only use clang if explicitly requested
+let g:mucomplete#can_complete['c'] = {
+    \ 'omni': {t -> g:mucomplete_with_key},
+    \ 'incl': {t -> g:mucomplete_with_key},
+    \ }
+let g:mucomplete#chains['c'] = ["c-p", 'keyp', 'uspl', 'omni', 'path', 'tags', 'incl']
 " Utilize compilation database for code completion, if possible
 let g:clang_auto_user_options = '.clang_complete, compile_commands.json, path'
 " Complete arguments and template parameters

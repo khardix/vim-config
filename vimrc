@@ -122,8 +122,9 @@ set completeopt=menuone,noinsert,noselect " show menu, wait for user choice
 set shortmess+=c    " Disable verbose completion status messages
 " => Tweak default completion chains
 let g:mucomplete#chains = {
-    \ 'default': ['path', 'omni', 'ulti', 'incl', 'uspl'],
+    \ 'default': ['path', 'omni', 'ulti', 'uspl'],
     \ }
+let g:mucomplete#can_complete = {}
 " => Start automatic completion on file load
 let g:mucomplete#enable_auto_at_startup = 1
 " => Prepare dictionary for additional completion methods

@@ -4,6 +4,9 @@
 
 " === Code completion ===
 let g:clang_user_options = $CXXFLAGS  " Use environment settings
+" Complete with clang on explicit Tab
+let g:mucomplete#can_complete['cpp'] = g:mucomplete#can_complete['c']
+let g:mucomplete#chains['cpp'] = g:mucomplete#chains['c']
 
 " === Linting ===
 let b:neomake_cpp_enabled_makers = ['clangtidy']  " Declare used checkers
