@@ -3,6 +3,7 @@
 " all (and only) relevant options.
 
 " === Code completion ===
+let g:deoplete#sources['cpp'] = g:deoplete#sources['c']
 let g:clang_user_options = $CXXFLAGS  " Use environment settings
 
 " === Linting ===

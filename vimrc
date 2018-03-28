@@ -118,19 +118,17 @@ augroup netrw
 augroup end
 
 " Auto-completion -- general
-set completeopt=menuone,noinsert,noselect " show menu, wait for user choice
+set completeopt=menuone,noinsert,noselect,preview " show menu, wait for user choice
 set shortmess+=c    " Disable verbose completion status messages
+" => Configure triggers
+let g:SuperTabDefaultCompletionType = 'context'
+let g:SuperTabContextDefaultCompletionType = '<c-x><c-o>'
+let g:SuperTabClosePreviewOnPopupClose = 1
 " => Tweak default completion chains
-let g:mucomplete#chains = {
-    \ 'default': ['path', 'omni', 'ulti', 'incl', 'uspl'],
+let g:deoplete#enable_at_startup = 1
+let g:deoplete#sources = {
+    \ '_': ['omni', 'file', 'ultisnips', 'dictionary', 'buffer'],
     \ }
-" => Start automatic completion on file load
-let g:mucomplete#enable_auto_at_startup = 1
-" => Prepare dictionary for additional completion methods
-" setting in ftplugin does not work :(
-let g:mucomplete#user_mappings = {
-\   'sqla': "\<c-c>a",
-\}
 
 " Syntax checking -- general
 let g:neomake_open_list = 2

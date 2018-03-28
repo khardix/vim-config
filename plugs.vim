@@ -25,9 +25,13 @@ Plug 'flazz/vim-colorschemes'   " Omnibus colorscheme support
 Plug 'sheerun/vim-polyglot'     " Omnibus language support
 
 " Auto-completion
-Plug 'lifepillar/vim-mucomplete' " minimal completion engine
-Plug 'davidhalter/jedi-vim'     " Python semantic completion
-Plug 'rip-rip/clang_complete'   " C/C++ semantic completion
+Plug 'ervandew/supertab'        " Tab for everything
+Plug 'Shougo/deoplete.nvim'     " Dark-powered asynchronous completion
+Plug 'roxma/nvim-yarp'          " ^ dependency
+Plug 'roxma/vim-hug-neovim-rpc' " ^ dependency
+
+Plug 'Rip-Rip/clang_complete'   " clang-based C/C++/ObjC completion
+Plug 'zchee/deoplete-jedi'      " Python completion
 Plug 'caio/querycommandcomplete.vim' " E-mail address completion
 
 " Auto-formatting and syntax checking
