@@ -120,6 +120,7 @@ augroup end
 " Auto-completion -- general
 set completeopt=menuone,noinsert,noselect " show menu, wait for user choice
 set shortmess+=c    " Disable verbose completion status messages
+set noinfercase     " Honor so-far typed completion case
 " => Tweak default completion chains
 let g:mucomplete#chains = {
     \ 'default': ['path', 'omni', 'ulti', 'uspl'],
@@ -165,7 +166,7 @@ augroup end
 
 " Code snippets
 " => Change default keybindings to work in tmux
-let g:UltiSnipsExpandTrigger = "<c-j>"
+let g:UltiSnipsExpandTrigger = "<c-t>"
 " => Use low case directory name
 let g:UltiSnipsSnippetDirectories = ['ulti-snips', 'UltiSnips']
 
