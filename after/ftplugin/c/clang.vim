@@ -7,6 +7,7 @@ let g:clang_snippets_engine = 'ultisnips'
 " === Code completion ===
 let g:clang_user_options = $CFLAGS  " Use environment settings
 " Only use clang if explicitly requested
+let g:clang_complete_auto = 0
 let g:mucomplete#can_complete['c'] = {
     \ 'omni': {t -> g:mucomplete_with_key},
     \ 'incl': {t -> g:mucomplete_with_key},
