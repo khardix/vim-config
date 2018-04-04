@@ -85,9 +85,7 @@ set hidden          " Allow for unsaved buffers in background
 set showtabline=1   " Show tabline for at least two lines
 set autowrite       " Auto save on file switch
 set confirm         " Ask to save instead of error on :q
-" => Remap tab switching to work on buffers
-nnoremap <silent> gt :bnext<cr>
-nnoremap <silent> gT :bprev<cr>
+" => Quickly delete a buffer
 nnoremap <silent> <leader>d :bdelete<cr>
 
 " Split pane movement

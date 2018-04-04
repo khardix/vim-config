@@ -45,7 +45,6 @@ Plug 'tpope/vim-fugitive'       " Use git from inside ViM
 Plug 'airblade/vim-gitgutter'   " Show git status in gutter
 
 " UI
-Plug 'ap/vim-buftabline'        " Show buffers in tabline
 Plug 'christoomey/vim-tmux-navigator'  " Simplify tmux navigation
 
 " Prose
