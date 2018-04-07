@@ -164,7 +164,9 @@ augroup end
 
 " Code snippets
 " => Change default keybindings to work in tmux
-let g:UltiSnipsExpandTrigger = "<c-t>"
+let g:UltiSnipsExpandTrigger        = "<c-t>"
+let g:UltiSnipsJumpForwardTrigger   = "<c-t>"
+let g:UltiSnipsJumpBackwardTrigger  = "<c-y>"
 " => Use low case directory name
 let g:UltiSnipsSnippetDirectories = ['ulti-snips', 'UltiSnips']
 
