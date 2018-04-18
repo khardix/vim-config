@@ -124,7 +124,7 @@ set shortmess+=c    " Disable verbose completion status messages
 set noinfercase     " Honor so-far typed completion case
 " => Tweak default completion chains
 let g:mucomplete#chains = {
-    \ 'default': ['path', 'omni', 'ulti', 'uspl'],
+    \ 'default': ['c-p', 'path', 'omni', 'ulti', 'uspl'],
     \ }
 let g:mucomplete#can_complete = {}
 " => Start automatic completion on file load

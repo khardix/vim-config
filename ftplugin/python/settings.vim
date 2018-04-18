@@ -8,6 +8,7 @@ augroup end
 " Auto-completion -- use jedi
 let g:jedi#use_tabs_not_buffers = 1
 let g:jedi#popup_on_dot = 0
+let g:mucomplete#chains['python'] = ['omni', 'c-p', 'path', 'ulti', 'uspl']
 
 " Syntax checking -- use python 3
 let b:neomake_python_enabled_makers = ['python', 'flake8']
