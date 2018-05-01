@@ -13,3 +13,7 @@ let g:mucomplete#chains['python'] = ['omni', 'c-p', 'path', 'ulti', 'uspl']
 " Syntax checking -- use python 3
 let b:neomake_python_enabled_makers = ['python', 'flake8']
 let b:neomake_python_python_exe = 'python3'
+
+" Autoformat -- use black
+let b:formatdef_black = '"black --quiet -"'
+let b:formatters_python = ['black']
