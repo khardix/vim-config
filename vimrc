@@ -164,6 +164,7 @@ let g:autoformat_remove_trailing_spaces = 1 " Remove trailing spaces
 augroup aformat
     autocmd! BufWrite * :Autoformat
 augroup end
+command DisableAutoformat augroup aformat | autocmd! | augroup end
 
 " Code snippets
 " => Change default keybindings to work in tmux
