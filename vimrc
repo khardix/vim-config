@@ -220,3 +220,8 @@ augroup end
 " => Switch between one-line and multi-line function call
 let g:argwrap_tail_comma = 1
 nnoremap <silent> <leader>a :ArgWrap<cr>
+
+" Per-project configuration
+" => Enable loading per-directory .vimrc
+" => Secure disables some features, keep at the end of main .vimrc
+set secure exrc
