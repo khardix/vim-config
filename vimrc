@@ -138,7 +138,7 @@ let g:mucomplete#user_mappings = {
 " Syntax checking -- general
 let g:neomake_open_list = 2
 let g:neomake_list_height = 5
-call neomake#configure#automake('rw')
+call neomake#configure#automake('rw', 500)
 " => Quick jump to current error
 nnoremap <silent> <leader>l :ll<cr>
 " => Disable checking in read-only buffers
