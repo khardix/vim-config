@@ -35,6 +35,10 @@ Plug 'neomake/neomake'          " Omnibus syntax checking
 Plug 'Chiel92/vim-autoformat'   " Omnibus auto formatter
 Plug 'foosoft/vim-argwrap'      " Easily wrap multi-line function arguments
 
+" Extra syntax highlighting
+Plug 'moby/moby', {'rtp': '/contrib/syntax/vim'}  " Dockerfile highlighting
+Plug 'khardix/vim-literate'     " Better support for literate programming
+
 " Code snippets
 Plug 'sirver/ultisnips'         " Snippets framework
 Plug 'honza/vim-snippets'       " Pre-defined snippets
