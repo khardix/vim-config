@@ -57,7 +57,7 @@ Plug 'junegunn/goyo.vim'        " Distraction-free writing
 Plug 'junegunn/limelight.vim'   " Paragraph focusing
 
 " Miscellaneous
-Plug 'docunext/closetag.vim', {'for': ['html','xml','xsl']}  " Auto-close *ML tags
+Plug 'docunext/closetag.vim', {'for': ['html','xml','xsl', 'html.jinja2']}  " Auto-close *ML tags
 Plug 'tpope/vim-commentary'     " Quick commenting
 Plug 'tpope/vim-repeat'         " The '.' even mightier
 Plug 'tpope/vim-surround'       " Mapping for surrounding manipulation
